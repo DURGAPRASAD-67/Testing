@@ -40,19 +40,21 @@
         </dependency>
     </dependencies>
 
-    <build>
-        <finalName>my-app</finalName>
-        <plugins>
-            <!-- Maven Compiler Plugin to compile with Java 8 -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version>
-                <configuration>
-                    <source>1.8</source> <!-- Set source version to Java 8 -->
-                    <target>1.8</target> <!-- Set target version to Java 8 -->
-                </configuration>
-            </plugin>
+   <build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.10.1</version> <!-- Ensure compatibility with Java 17 -->
+            <configuration>
+                <source>17</source> <!-- Set source version to Java 17 -->
+                <target>17</target> <!-- Set target version to Java 17 -->
+                <encoding>UTF-8</encoding> <!-- Ensure consistent UTF-8 encoding -->
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
+
 
             <!-- Maven WAR Plugin for packaging the application as a WAR file -->
             <plugin>
