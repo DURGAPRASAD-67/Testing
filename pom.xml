@@ -47,12 +47,28 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.10.1</version>
                 <configuration>
-                    <source default-value="17">${maven.compiler.source}</source>
-                    <target default-value="17">${maven.compiler.target}</target>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
                 </configuration>
             </plugin>
 
-            <!-- Maven WAR Plugin -->
+            <!-- Maven JAR Plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.3.0</version>
+                <configuration>
+                    <classesDirectory>${project.build.outputDirectory}</classesDirectory>
+                    <defaultManifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</defaultManifestFile>
+                    <finalName>${project.build.finalName}</finalName>
+                    <forceCreation>false</forceCreation>
+                    <outputDirectory>${project.build.directory}</outputDirectory>
+                    <skipIfEmpty>false</skipIfEmpty>
+                    <useDefaultManifestFile>false</useDefaultManifestFile>
+                </configuration>
+            </plugin>
+
+            <!-- Maven WAR Plugin (optional if building a WAR file) -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
