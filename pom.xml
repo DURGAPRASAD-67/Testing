@@ -9,11 +9,13 @@
     <name>01-my-app</name>
     <url>http://maven.apache.org</url>
 
-    <properties>
-        <!-- Set the Java version to 8 for your project -->
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-    </properties>
+   <properties>
+    <!-- Set the Java version to 17 for your project -->
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> <!-- Set encoding to UTF-8 -->
+</properties>
+
 
     <dependencies>
         <!-- JUnit dependency -->
