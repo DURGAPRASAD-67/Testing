@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import java.time.Duration;
 
 public class MayaAI {
 
@@ -18,7 +19,8 @@ public class MayaAI {
             driver.manage().window().maximize();
             driver.get("https://maya.technicalhub.io");
 
-            WebDriverWait wait = new WebDriverWait(driver, 10);
+            // Updated WebDriverWait to use Duration
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
             // Click the login link
             WebElement loginLink = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//li[@class='header-btn']//a[1]")));
@@ -41,7 +43,8 @@ public class MayaAI {
             return status.equals("Active");
 
         } catch (Exception e) {
-            System.out.println("An error occurred: " + e.getMessage());
+            // Log full exception stack trace for debugging
+            e.printStackTrace();
             return false;
         } finally {
             if (driver != null) {
