@@ -2,49 +2,33 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.adit</groupId>
-    <artifactId>my-selenium-project</artifactId>
+
+    <groupId>com.yourcompany</groupId>
+    <artifactId>mayaai</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <!-- Define properties for Java version -->
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-    <!-- Project dependencies -->
     <dependencies>
-        <!-- JUnit dependency -->
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>5.8.2</version>
-            <scope>test</scope>
-        </dependency>
-
-        <!-- Selenium WebDriver -->
+        <!-- Selenium Dependency -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>4.14.0</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>com.google.guava</groupId>
-                    <artifactId>guava</artifactId>
-                </exclusion>
-            </exclusions>
+            <version>4.5.0</version>
         </dependency>
 
-        <!-- WebDriverManager for automatic WebDriver setup -->
+        <!-- WebDriverManager Dependency -->
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
-            <version>5.3.0</version>
+            <version>5.3.1</version>
         </dependency>
     </dependencies>
 
-    <!-- Build configuration -->
+    <!-- Build Configuration -->
     <build>
         <plugins>
             <!-- Maven Compiler Plugin -->
@@ -72,13 +56,6 @@
                     <skipIfEmpty>false</skipIfEmpty>
                     <useDefaultManifestFile>false</useDefaultManifestFile>
                 </configuration>
-            </plugin>
-
-            <!-- Maven WAR Plugin (optional if building a WAR file) -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-war-plugin</artifactId>
-                <version>3.8.1</version>
             </plugin>
         </plugins>
     </build>
