@@ -8,17 +8,11 @@
 
     <!-- Define properties for Java version -->
     <properties>
-    <maven.compiler.source>17</maven.compiler.source>
-    <maven.compiler.target>17</maven.compiler.target>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-</properties>
-
-         <project>
-    ...
-    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-</project>
+
     <!-- Project dependencies -->
     <dependencies>
         <!-- JUnit dependency -->
@@ -30,17 +24,18 @@
         </dependency>
 
         <!-- Selenium WebDriver -->
-       <dependency>
-    <groupId>org.seleniumhq.selenium</groupId>
-    <artifactId>selenium-java</artifactId>
-    <version>4.14.0</version>
-    <exclusions>
-        <exclusion>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-        </exclusion>
-    </exclusions>
-</dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>4.14.0</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.google.guava</groupId>
+                    <artifactId>guava</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
         <!-- WebDriverManager for automatic WebDriver setup -->
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
@@ -52,7 +47,7 @@
     <!-- Build configuration -->
     <build>
         <plugins>
-            <!-- Maven Compiler Plugin -->
+            <!-- Maven Compiler Plugin (ensure you use version 3.10.1 or later) -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
