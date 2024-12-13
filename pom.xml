@@ -22,12 +22,12 @@
         <allure.maven.version>2.29.1</allure.maven.version>
     </properties>
 
-    <repositories>
+    
         <repository>
             <id>allure-repository</id>
             <url>https://repository.jfrog.org/artifactory/libs-release</url>
         </repository>
-    </repositories>
+ 
 
     <dependencies>
         <!-- Selenium Dependency -->
