@@ -88,14 +88,13 @@
         </dependency>
     </dependencies>
 
- <repositories>
-    <!--
-    <repository>
-        <id>qameta-repo</id>
-        <url>https://repo.qameta.io/maven2/</url>
-    </repository>
-    -->
-</repositories>
+    <repositories>
+        <!-- Ensuring Maven Central is used for dependency resolution -->
+        <repository>
+            <id>central</id>
+            <url>https://repo.maven.apache.org/maven2</url>
+        </repository>
+    </repositories>
 
     <build>
         <plugins>
