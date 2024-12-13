@@ -28,11 +28,7 @@
             <url>https://repo.maven.apache.org/maven2</url>
         </repository>
     </repositories>
- <dependency>
-    <groupId>org.aspectj</groupId>
-    <artifactId>aspectjweaver</artifactId>
-    <version>1.9.6</version> <!-- Or any other appropriate version -->
-</dependency>
+
     <dependencies>
         <!-- Selenium Dependency -->
         <dependency>
@@ -61,6 +57,13 @@
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-cucumber7-jvm</artifactId>
             <version>${allure.cucumber7.version}</version>
+        </dependency>
+
+        <!-- AspectJ Weaver Dependency -->
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>${aspectj.version}</version>
         </dependency>
     </dependencies>
 
