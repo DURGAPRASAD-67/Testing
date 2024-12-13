@@ -51,10 +51,10 @@
 
         <!-- Allure Dependencies -->
         <dependency>
-            <groupId>io.qameta.allure</groupId>
-            <artifactId>allure-cucumber7-jvm</artifactId>
-            <version>${allure.cucumber7.version}</version>
-        </dependency>
+    <groupId>io.qameta.allure</groupId>
+    <artifactId>allure-cucumber7-jvm</artifactId>
+    <version>2.13.0</version> <!-- Use the correct available version -->
+</dependency>
 
         <!-- Utility Libraries -->
         <dependency>
@@ -121,7 +121,12 @@
             <url>https://repo.maven.apache.org/maven2</url>
         </repository>
     </repositories>
-
+<repositories>
+    <repository>
+        <id>jcenter</id>
+        <url>https://jcenter.bintray.com</url>
+    </repository>
+</repositories>
     <build>
         <plugins>
             <plugin>
