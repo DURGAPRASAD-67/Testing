@@ -92,6 +92,12 @@
             <id>central</id>
             <url>https://repo.maven.apache.org/maven2</url>
         </repository>
+
+        <!-- Allure Repository for Allure dependencies -->
+        <repository>
+            <id>allure</id>
+            <url>https://repository.qameta.io/nexus/content/repositories/releases/</url>
+        </repository>
     </repositories>
 
     <build>
