@@ -23,12 +23,10 @@
     </properties>
 
     <repositories>
-        <!-- Add any external repositories here -->
         <repository>
             <id>central</id>
             <url>https://repo.maven.apache.org/maven2</url>
         </repository>
-        <!-- Example additional repository -->
         <repository>
             <id>example-repo</id>
             <url>https://example.com/maven-repo</url>
@@ -36,7 +34,7 @@
     </repositories>
 
     <dependencies>
-        <!-- Dependencies as provided -->
+        <!-- Add your dependencies here -->
     </dependencies>
 
     <build>
