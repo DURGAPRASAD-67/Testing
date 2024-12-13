@@ -115,7 +115,7 @@
                 <version>3.0.0-M5</version>
             </plugin>
 
-            <!-- Allure Report Plugin for generating Allure reports -->
+            <!-- Allure Maven Plugin for generating Allure reports -->
             <plugin>
                 <groupId>io.qameta.allure</groupId>
                 <artifactId>allure-maven</artifactId>
