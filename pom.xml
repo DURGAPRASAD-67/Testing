@@ -23,27 +23,27 @@
     </properties>
 
     <repositories>
-    <repository>
-        <id>allure-repository</id>
-        <url>https://repository.jfrog.org/artifactory/libs-release</url>
-    </repository>
-</repositories>
+        <repository>
+            <id>allure-repository</id>
+            <url>https://repository.jfrog.org/artifactory/libs-release</url>
+        </repository>
+    </repositories>
 
     <dependencies>
         <!-- Selenium Dependency -->
         <dependency>
-    <groupId>org.seleniumhq.selenium</groupId>
-    <artifactId>selenium-java</artifactId>
-    <version>4.0.0</version> <!-- Ensure this version exists -->
-</dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>4.0.0</version> <!-- Ensure this version exists -->
+        </dependency>
 
         <!-- Cucumber Dependency -->
         <dependency>
-             <groupId>io.cucumber</groupId>
-             <artifactId>cucumber-java</artifactId>
-             <version>7.20.1</version>
-             <scope>test</scope>
-         </dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>7.20.1</version>
+            <scope>test</scope>
+        </dependency>
 
         <!-- TestNG Dependency -->
         <dependency>
@@ -99,3 +99,4 @@
         </plugins>
     </build>
 </project>
+
