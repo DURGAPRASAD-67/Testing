@@ -43,13 +43,6 @@
             <version>${selenium.version}</version>
         </dependency>
 
-        <!-- Allure Cucumber7 JVM Dependency -->
-        <dependency>
-            <groupId>io.qameta.allure</groupId>
-            <artifactId>allure-cucumber7-jvm</artifactId>
-            <version>${allure.version}</version> <!-- Updated Allure Version -->
-        </dependency>
-
         <!-- WebDriver Manager -->
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
