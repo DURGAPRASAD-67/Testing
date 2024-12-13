@@ -28,7 +28,11 @@
             <url>https://repo.maven.apache.org/maven2</url>
         </repository>
     </repositories>
-
+ v<dependency>
+    <groupId>org.aspectj</groupId>
+    <artifactId>aspectjweaver</artifactId>
+    <version>1.9.6</version> <!-- Or any other appropriate version -->
+</dependency>
     <dependencies>
         <!-- Selenium Dependency -->
         <dependency>
