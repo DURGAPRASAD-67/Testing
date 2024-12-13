@@ -23,11 +23,11 @@
     </properties>
 
     <repositories>
-        <repository>
-            <id>central</id>
-            <url>https://repo.maven.apache.org/maven2</url>
-        </repository>
-    </repositories>
+    <repository>
+        <id>allure-repository</id>
+        <url>https://repository.jfrog.org/artifactory/libs-release</url>
+    </repository>
+</repositories>
 
     <dependencies>
         <!-- Selenium Dependency -->
