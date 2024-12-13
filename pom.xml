@@ -27,10 +27,6 @@
             <id>central</id>
             <url>https://repo.maven.apache.org/maven2</url>
         </repository>
-        <repository>
-            <id>example-repo</id>
-            <url>https://example.com/maven-repo</url>
-        </repository>
     </repositories>
 
     <dependencies>
