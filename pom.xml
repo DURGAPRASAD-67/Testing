@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.testProj</groupId>
     <artifactId>CucumberTestNG</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <name>Cucumber TestNG Project</name>
+    <description>Test project integrating Cucumber, TestNG, Selenium, and Allure.</description>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <cucumber.version>6.10.4</cucumber.version> <!-- Cucumber Version -->
         <selenium.version>4.8.0</selenium.version> <!-- Selenium Version -->
-        <allure.version>2.13.0</allure.version> <!-- Allure Version -->
+        <allure.version>2.29.1</allure.version> <!-- Allure Version -->
     </properties>
 
     <dependencies>
@@ -52,21 +54,21 @@
             <version>${allure.version}</version>
         </dependency>
 
-        <!-- Allure TestNG for Reporting -->
+        <!-- Allure TestNG -->
         <dependency>
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-testng</artifactId>
             <version>${allure.version}</version>
         </dependency>
 
-        <!-- Apache Commons IO (Used for file handling in Selenium tests) -->
+        <!-- Apache Commons IO -->
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
             <version>2.8.0</version>
         </dependency>
 
-        <!-- Log4j for logging purposes -->
+        <!-- Log4j for Logging -->
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-api</artifactId>
@@ -92,17 +94,11 @@
             <id>central</id>
             <url>https://repo.maven.apache.org/maven2</url>
         </repository>
-
-        <!-- Allure Repository for Allure dependencies -->
-        <repository>
-            <id>allure</id>
-            <url>https://repository.qameta.io/nexus/content/repositories/releases/</url>
-        </repository>
     </repositories>
 
     <build>
         <plugins>
-            <!-- Maven Surefire Plugin for running tests -->
+            <!-- Maven Surefire Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -114,22 +110,15 @@
                 </configuration>
             </plugin>
 
-            <!-- Maven Failsafe Plugin for integration tests -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-failsafe-plugin</artifactId>
-                <version>3.0.0-M5</version>
-            </plugin>
-
-            <!-- Allure Maven Plugin for generating Allure reports -->
+            <!-- Allure Maven Plugin -->
             <plugin>
                 <groupId>io.qameta.allure</groupId>
                 <artifactId>allure-maven</artifactId>
-                <version>2.13.0</version>
+                <version>2.29.1</version>
                 <executions>
                     <execution>
                         <goals>
-                            <goal>serve</goal> <!-- To generate and serve the report -->
+                            <goal>report</goal>
                         </goals>
                     </execution>
                 </executions>
