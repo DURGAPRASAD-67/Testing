@@ -76,6 +76,13 @@
             <version>2.0.9</version>
             <scope>test</scope>
         </dependency>
+
+        <!-- Allure Cucumber Dependency -->
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-cucumber7-jvm</artifactId>
+            <version>2.13.0</version>
+        </dependency>
     </dependencies>
 
     <!-- Repositories -->
@@ -83,6 +90,11 @@
         <repository>
             <id>central</id>
             <url>https://repo.maven.apache.org/maven2</url>
+        </repository>
+        <!-- Optional: Add JitPack if needed -->
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
         </repository>
     </repositories>
 
