@@ -17,7 +17,7 @@ public class MayaAI {
 
         try {
             driver.manage().window().maximize();
-            driver.get("http://node.technicalhub.io:7001/");
+            driver.get("https://maya.technicalhub.io/");
 
             // Updated WebDriverWait to use Duration (works in Java 8 and later)
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
